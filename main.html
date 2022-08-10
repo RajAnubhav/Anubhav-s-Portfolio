@@ -1,0 +1,196 @@
+<!-- https://codepen.io/oliviale/pen/BaoXOOP -->
+<!-- Page turning : https://codepen.io/MikeHarrisonDesign/pen/jOMbgwV -->
+<!-- page turning youtube : https://www.youtube.com/watch?v=m67hANanlJg -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="mybody" id="dark">
+        <!-- <div class="triangle"></div> -->
+        <!-- header -->
+        <div class="top" id="top">
+            <li><a class="links" href="#">ANUBHAV</a></li>
+            <li><a class="links" href="#">HOME TOWN</a></li>
+            <li><a class="links" href="#">LOCATION</a></li>
+            <li><a class="links" href="#">PROJECTS</a></li>
+            <li><a class="links" href="#">HOBBIES</a></li>
+            <li><a class="links" href="#">ACHEIVEMENTS</a></li>
+            <li><a class="links" href="#">LOCALS</a></li>
+            <li><a class="links" href="#">FUN</a></li>
+            <li class="mode" id="mode" onclick="mode()">
+                <!-- light mode -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-lightbulb" viewBox="0 0 16 16">
+                    <path
+                        d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
+                </svg>
+
+            </li>
+        </div>
+        <div class="body-content">
+            <h1 id="heading" class="heading">Anubhav Raj</h1>
+            <div class="description">
+                <p id="date">Date</p>
+                <p id="time">time</p>
+                <!-- this is the link section -->
+                <p class="links">
+                    <a href="https://www.github.com/RajAnubhav" target="_blank" title="github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anubhav-raj-09161b205/" target="_blank" title="linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.whatsapp.com" target="_blank" title="whatsapp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" title="instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" title="facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.discord.com" target="_blank" title="discord">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-discord" viewBox="0 0 16 16">
+                            <path
+                                d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+                        </svg>
+                    </a>
+                </p>
+            </div>
+            <div class="header">
+                <li><a href="./index.html">#HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SIGN IN</a></li>
+                <li><a href="#">CONTACT ME</a></li>
+            </div>
+            <div class="container">
+                <div class="subheading">
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quos quibusdam doloremque!</p>
+                </div>
+                <h2 style="font-size: 20px; font-family:'Arial;">
+                    About Me
+                </h2>
+                <div class="heading1">
+
+                    <div class="about">
+                        <div class="content">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptate atque fuga, quae
+                                omnis dolorem.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptate atque fuga, quae
+                                omnis dolorem.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptate atque fuga, quae
+                                omnis dolorem.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptate atque fuga, quae
+                                omnis dolorem.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptate atque fuga, quae
+                                omnis dolorem.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptate atque fuga, quae
+                                omnis dolorem.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptate atque fuga, quae
+                                omnis dolorem.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptate atque fuga, quae
+                                omnis dolorem.</p>
+                        </div>
+                        <div>
+                            <a href="https://www.github.com/RajAnubhav" target="_blank">
+                                <img class="myimg" src="https://avatars.githubusercontent.com/u/93657903?v=4" alt="">
+                            </a>
+                            <div class="caption">Hello this is me Anubhav</div>
+                        </div>
+
+                        <br>
+                    </div>
+
+                    <div class="upcomings">
+                        <li>
+                            <img width="80px" height="100px"
+                                src="data:image/png;base64,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"
+                                alt="">
+                        </li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui repudiandae nesciunt
+                            hic
+                            sequi illo?</li>
+                        <br>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui repudiandae nesciunt
+                            hic
+                            sequi illo?</li>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div class="footer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit culpa similique iusto repellat
+                    asperiores
+                    est.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit culpa similique iusto repellat
+                    asperiores
+                    est.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <script>
+        // this is the date section
+        const d = new Date();
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let month = months[d.getMonth()];
+        document.getElementById("date").innerHTML = month + " " + d.getDate() + ", " + d.getFullYear();
+
+        // this is to get the time section 
+        let myVar = setInterval(myTimer, 1000);
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("time").innerHTML = d.toLocaleTimeString();
+        }
+
+
+        // this is for dark mode
+        const mode = () => {
+            let element = document.body;
+            console.log("balle balle ye kaam kr rha hai");
+            element.classList.toggle("dark");
+
+            let ele1 = document.getElementById("heading");
+            ele1.classList.toggle("heading-top-dark");
+
+            let ele2 = document.getElementById("heading");
+            ele2.classList.toggle("heading-bottom-dark");
+        }
+    </script>
+</body>
+
+</html>
